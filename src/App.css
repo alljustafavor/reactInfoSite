@@ -124,13 +124,13 @@ nav {
 .main-content-container li {
   padding: 1.5rem;
   width: 100%;
+  font-size: 1.1rem;
 }
 
 .main-content-container ul {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 19px;
   height: 30%;
   align-items: center;
