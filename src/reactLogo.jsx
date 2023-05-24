@@ -1,46 +1,14 @@
-import './App.css';
+// icon:bxl-react | Boxicons https://boxicons.com/ | Atisa
+import * as React from "react";
 
-
-function NavBar() {
+function IconBxlReact(props) {
   return (
-    <header>
-      <nav>
-        <div className='nav-logo'>
-          <img className={'logo'} src={"./logo192.png"} alt={"React JS library Logo"} width={"60px"}/>
-          <h1>FavorReact</h1>
-        </div>
-        <ul className='nav-items'>
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header> 
-  )
-}
-
-function MainContent() {
-  return (
-      <div className={"main-content-container"}>
-        <h1>Reasons I'm excited to learn <span className={'cyan'}>React</span></h1>
-        <ul className='list'>
-          <li>It's easier to read and write </li>
-          <li>The Virtual DOM is the best feature</li>
-          <li>Being maintained by Facebook and the open-source community</li>
-          <li>React is a very hireable skill</li>
-          <li>React is also very popular</li>
-        </ul> 
-      </div>
-  );
-}
-
-function ContentImg() {
-  return (
-      <div className={'main-logo-container'}>
     <svg
-      className='main-logo'
       viewBox="0 0 24 24"
       fill="currentColor"
+      height="1em"
+      width="1em"
+      {...props}
     >
       <path d="M13.785 11.245 A1.785 1.785 0 0 1 12 13.03 A1.785 1.785 0 0 1 10.215 11.245 A1.785 1.785 0 0 1 13.785 11.245 z" />
       <path d="M7.002 14.794l-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452 0-1.452 1.684-2.711 4.617-3.452l.395-.1.111.391a19.507 19.507 0 001.136 2.983l.085.178-.085.178c-.46.963-.841 1.961-1.136 2.985l-.111.39zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542 0 .954 1.368 1.913 3.598 2.54.273-.868.603-1.717.985-2.54a20.356 20.356 0 01-.985-2.542zm10.572 6.095l-.11-.392a19.628 19.628 0 00-1.137-2.984l-.085-.177.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39.395.1c2.935.741 4.617 2 4.617 3.453 0 1.452-1.683 2.711-4.617 3.452l-.395.101zm-.41-3.553c.4.866.733 1.718.987 2.54 2.23-.627 3.599-1.586 3.599-2.54 0-.956-1.368-1.913-3.599-2.542a20.683 20.683 0 01-.987 2.542z" />
@@ -48,30 +16,7 @@ function ContentImg() {
       <path d="M17.58 8.695l-.395-.099a19.477 19.477 0 00-3.158-.509l-.194-.017-.112-.162A19.551 19.551 0 0011.7 5.434l-.283-.291.283-.29c2.08-2.134 4.066-2.979 5.303-2.265 1.262.727 1.513 2.81.688 5.717l-.111.39zm-3.287-1.421c.954.085 1.858.228 2.698.417.571-2.242.425-3.903-.404-4.381-.824-.477-2.375.253-4.004 1.841.616.67 1.188 1.378 1.71 2.123zM8.001 20.15a1.983 1.983 0 01-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391.395.1c.964.243 2.026.414 3.158.507l.194.019.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522zm-.993-5.362c-.57 2.242-.424 3.906.404 4.384.825.47 2.371-.255 4.005-1.842a21.17 21.17 0 01-1.713-2.123 20.692 20.692 0 01-2.696-.419z" />
       <path d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017-.113-.162a25.697 25.697 0 01-1.126-1.769 26.028 26.028 0 01-.971-1.859l-.084-.177.084-.179c.299-.632.622-1.252.971-1.858.347-.596.726-1.192 1.126-1.77l.113-.16.196-.018a25.148 25.148 0 014.198 0l.194.019.113.16a25.136 25.136 0 012.1 3.628l.083.179-.083.177a24.742 24.742 0 01-2.1 3.628l-.113.162-.194.017c-.706.057-1.412.087-2.098.087zm-1.834-.904c1.235.093 2.433.093 3.667 0a24.469 24.469 0 001.832-3.168 23.916 23.916 0 00-1.832-3.168 23.877 23.877 0 00-3.667 0 23.743 23.743 0 00-1.832 3.168 24.82 24.82 0 001.832 3.168z" />
     </svg>
-      </div>
   );
 }
 
-
-function FooterBar() {
-  return (
-    <footer>
-      <small><span className={'cyan'}>©</span> 2023 Favor development. All rights reserved.</small>
-    </footer>
-  )
-}
-
-function App() {
-  return (
-    <>
-      <NavBar />
-      <MainContent />
-      <ContentImg />
-      <FooterBar />
-    </>
-  )
-}
-
-
-
-export default App;
+export default IconBxlReact;

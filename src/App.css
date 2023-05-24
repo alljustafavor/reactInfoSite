@@ -154,14 +154,15 @@ footer {
 
 .main-logo-container {
   position:absolute;
-  bottom: 10rem;
-  
+  bottom: 5rem;
+  left: 100rem;
 }
 
 .main-logo {
   position: relative;
   z-index: 999;
-  color:#21222A
+  height: 70vh;
+  color: #21222A;
 }
 .cyan {
   color: #61dcfb;
