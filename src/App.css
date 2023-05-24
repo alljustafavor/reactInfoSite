@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Sono:wght@400;600&display=swap');
+
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Inter', sans-serif;
+font-family: 'Sono', sans-serif; */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 28.93px;
+  margin: 1.5% 2%;
+  color: #61dcfb;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21222A;
+  color: white;
+}
+
+.nav-items{
+  list-style: none;
+  display: flex;
+  margin-right: 3%;
+}
+
+.nav-items li {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.logo {
+  width: 3.8rem;
+}
+
+.main-content-container {
+  background: #282D35;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  max-height: 500px;
+  overflow-y: hidden;
+  min-width: 1200px;
+}
+
+.main-content-container h1{
+  height: 90%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.9rem;
+  letter-spacing: -0.05em;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  
+}
+
+
+.main-content-container li::before {
+  content: "•";
+  color: cyan;
+  padding-right: 2%;
+  font-size: 1.5rem;
+}
+
+.main-content-container li {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.main-content-container ul {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  height: 30%;
+  align-items: center;
+  text-align: left;
+  
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #21222A;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.cyan {
+  color: #61dcfb;
+}

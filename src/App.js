@@ -1,22 +1,58 @@
 import './App.css';
 
 
-function App() {
+function NavBar() {
   return (
-    <div>
+    <header>
       <nav>
-        <img src={'./logo192.png'} width={'40px'} alt={"Javascript React logo made by facebook"} />
-      </nav> 
-      <h1>Fun Facts About React</h1>
-      <ul>
-        <li>Was released in 2013</li>
-        <li>Was Originally created by Jordan Walke</li>
-        <li>Has well over 100k stars on Github</li>
-        <li>is maintained by facebook and the Github community</li>
-        <li>Powers thousands of enterprise apps, including but not limited to mobile apps</li>
-      </ul>
-    </div>
+        <div className='nav-logo'>
+          <img className={'logo'} src={"./logo192.png"} alt={"React JS library Logo"} width={"60px"}/>
+          <h1>FavorReact</h1>
+        </div>
+        <ul className='nav-items'>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header> 
+  )
+}
+
+function MainContent() {
+  return (
+      <div className={"main-content-container"}>
+        <h1>Reasons I'm excited to learn <span className={'cyan'}>React</span></h1>
+        <ul className='list'>
+          <li>It's easier to read and write </li>
+          <li>The Virtual DOM is the best feature</li>
+          <li>Being maintained by Facebook and the open-source community</li>
+          <li>React is a very hireable skill</li>
+          <li>React is also very popular</li>
+        </ul>
+      </div>
   );
 }
+
+
+function FooterBar() {
+  return (
+    <footer>
+      <small><span className={'cyan'}>©</span> 2023 Favor development. All rights reserved.</small>
+    </footer>
+  )
+}
+
+function App() {
+  return (
+    <>
+      <NavBar />
+      <MainContent />
+      <FooterBar />
+    </>
+  )
+}
+
+
 
 export default App;
